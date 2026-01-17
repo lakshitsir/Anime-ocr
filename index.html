@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Anime OCR 3D</title>
+<title>Legendary OCR</title>
 
 <link rel="stylesheet" href="style.css">
 
@@ -12,15 +12,18 @@
 </head>
 
 <body>
+<canvas id="bg"></canvas>
+
 <div id="ui">
-  <h1>ANIME OCR</h1>
-  <p>Any Language • Real-Time 3D • Clean Text</p>
+  <h1>LEGENDARY OCR</h1>
+  <p>Any Language • Clean Text • Max Layout</p>
 
   <input type="file" id="file" accept="image/*">
-  <pre id="output">Waiting for image...</pre>
-</div>
 
-<canvas id="bg"></canvas>
+  <canvas id="preview"></canvas>
+
+  <pre id="output">Waiting for image…</pre>
+</div>
 
 <script src="main.js"></script>
 </body>
