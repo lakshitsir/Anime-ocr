@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Anime OCR 3D</title>
+
+<link rel="stylesheet" href="style.css">
+
+<script src="https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/tesseract.js@5/dist/tesseract.min.js"></script>
+</head>
+
+<body>
+<div id="ui">
+  <h1>ANIME OCR</h1>
+  <p>Any Language • Real-Time 3D • Clean Text</p>
+
+  <input type="file" id="file" accept="image/*">
+  <pre id="output">Waiting for image...</pre>
+</div>
+
+<canvas id="bg"></canvas>
+
+<script src="main.js"></script>
+</body>
+</html>
