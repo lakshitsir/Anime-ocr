@@ -6,54 +6,66 @@
 }
 
 body {
-  overflow: hidden;
   background: black;
+  overflow: hidden;
 }
 
 #bg {
   position: fixed;
-  top: 0;
-  left: 0;
+  inset: 0;
+  z-index: 1;
 }
 
 #ui {
-  position: absolute;
-  top: 5%;
+  position: fixed;
+  top: 4%;
   left: 50%;
   transform: translateX(-50%);
-  width: 90%;
-  max-width: 420px;
-  padding: 20px;
-  background: rgba(0,0,0,0.6);
+  width: 92%;
+  max-width: 460px;
+  padding: 16px;
+
+  background: rgba(0,0,0,0.65);
   border: 2px solid #00ffff;
-  border-radius: 20px;
-  box-shadow: 0 0 40px #00ffff;
-  text-align: center;
+  border-radius: 18px;
+  box-shadow: 0 0 35px #00ffff;
   backdrop-filter: blur(10px);
+
+  text-align: center;
+  z-index: 10;
 }
 
 #ui h1 {
   color: #00ffff;
   text-shadow: 0 0 20px #00ffff;
+  margin-bottom: 6px;
 }
 
 #ui p {
-  color: #ccc;
-  margin-bottom: 15px;
+  color: #aaa;
+  margin-bottom: 10px;
 }
 
 #file {
   width: 100%;
-  margin-bottom: 15px;
+  margin-bottom: 10px;
+}
+
+#preview {
+  width: 100%;
+  max-height: 200px;
+  margin-bottom: 10px;
+  border: 1px solid #00ffff;
+  display: none;
 }
 
 #output {
-  max-height: 200px;
-  overflow: auto;
   background: black;
   color: #00ff99;
   padding: 10px;
   border-radius: 10px;
+  max-height: 240px;
+  overflow-y: auto;
   white-space: pre-wrap;
   font-size: 13px;
-}
+  }
